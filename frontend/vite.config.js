@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['axios'], // Ensure external modules are resolved
+      external: ['axios', 'react-toastify'], // Both modules are now external
     },
   },
 });
