@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['axios', 'react-toastify'], // Both modules are now external
+      external: ['axios', 'react-toastify', 'react-router-dom'], // Add react-router-dom here
     },
   },
 });
