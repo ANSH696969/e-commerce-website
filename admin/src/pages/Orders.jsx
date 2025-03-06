@@ -11,7 +11,7 @@ const Orders = ({ token }) => {
   const [orders, setOrders] = useState([])
 
   const fetchAllOrders = async () => {
-
+      
     if (!token) {
       return null;
     }
@@ -24,7 +24,7 @@ const Orders = ({ token }) => {
       else {
         toast.error(response.data.message)
       }
-
+          
     } catch (error) {
       toast.error(error.message)
     }

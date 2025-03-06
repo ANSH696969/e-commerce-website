@@ -9,7 +9,7 @@ const Cart = () => {
 
   const {products,currency,cartItems,updateQuantity,navigate}=useContext(ShopContext);
 
-
+      
   const [cartData,setCartData]=useState([]);
 
 
